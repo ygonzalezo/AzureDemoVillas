@@ -3,9 +3,9 @@ env
 sqlplus / as sysdba <<EOF
 set heading off feedback off verify off
 ALTER SESSION SET "_ORACLE_SCRIPT"=true;
-CREATE USER agente2 IDENTIFIED BY admin;
-GRANT CONNECT TO agente2;
-GRANT CONNECT, RESOURCE, DBA TO agente2;
+CREATE USER agente3 IDENTIFIED BY admin;
+GRANT CONNECT TO agente3;
+GRANT CONNECT, RESOURCE, DBA TO agente3;
 exit
 EOF
 
