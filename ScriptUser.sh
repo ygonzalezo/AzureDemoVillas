@@ -1,4 +1,8 @@
-ALTER SESSION SET "_ORACLE_SCRIPT"=true;
-CREATE USER milena IDENTIFIED BY admin;
-GRANT CONNECT TO usuario;
-GRANT CONNECT, RESOURCE, DBA TO milena;
+ORACLE_SID=cdb1; export ORACLE_SID
+env
+sqlplus / as sysdba <<EOF
+set heading off feedback off verify off
+SELECT * FROM ALL_USERS;
+exit
+EOF
+
